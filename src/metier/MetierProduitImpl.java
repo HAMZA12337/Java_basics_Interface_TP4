@@ -54,4 +54,15 @@ List <Produit> prod =new ArrayList<>();
             }
         };
     }
+
+
+    @Override
+    public List<Produit> findByNom(String nom) {
+        List<Produit> temp =new ArrayList<>();
+
+        for (Produit prd :prod){
+            if(prd.getNom().equals(nom)) {
+                temp.add(prd);
+            }}
+            return temp;  }
 }
