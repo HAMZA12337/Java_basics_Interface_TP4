@@ -3,6 +3,8 @@ package presentation;
 import metier.MetierProduitImpl;
 import metier.Produit;
 
+import java.sql.SQLSyntaxErrorException;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,9 +23,13 @@ public class Main {
             System.out.println("----------------------------------------------------");
         }
 
-
-
-
+//test1.delete(1222);
+        System.out.println(test1.findById(1222));
+//        for (Produit prd: test1.getAll()
+//        ) {
+//            System.out.println(prd);
+//            System.out.println("----------------------------------------------------");
+//        }
 
 
 
